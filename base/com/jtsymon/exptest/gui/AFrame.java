@@ -1,7 +1,8 @@
 package com.jtsymon.exptest.gui;
 
-import com.jtsymon.exptest.impl.Browser;
+import com.jtsymon.exptest.impl.gui.GraphicsObject;
 import com.jtsymon.exptest.items.Item;
+import com.jtsymon.exptest.misc.Rectangle;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,13 +40,16 @@ public abstract class AFrame {
         if (selected != this.selected) {
             if (this.selected != null) {
                 this.selected.setHighlight (false);
-                Browser._instance.invalidateRect(this.selected.getRect());
+                this.invalidateRect(this.selected.getRect());
             }
             if (selected != null) {
                 selected.setHighlight(true);
-                Browser._instance.invalidateRect(selected.getRect());
+                this.invalidateRect(selected.getRect());
             }
         }
         this.selected = selected;
     }
+
+    public abstract void draw(GraphicsObject go);
+    public abstract void invalidateRect(Rectangle rect);
 }

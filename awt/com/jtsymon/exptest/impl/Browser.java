@@ -3,9 +3,8 @@ package com.jtsymon.exptest.impl;
 import com.jtsymon.exptest.impl.gui.Frame;
 import com.jtsymon.exptest.impl.gui.GraphicsObject;
 import com.jtsymon.exptest.io.FrameLoader;
-import com.jtsymon.exptest.misc.Rectangle;
 
-import java.awt.Graphics;
+import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.WindowAdapter;
@@ -42,10 +41,6 @@ public class Browser extends java.awt.Frame {
                 super.mouseClicked(e);
             }
         });
-    }
-
-    public void invalidateRect (Rectangle rect) {
-        this.repaint(rect.x - 1, rect.y - 1, rect.width + 2, rect.height + 2);
     }
 
     @Override

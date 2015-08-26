@@ -1,7 +1,7 @@
 package com.jtsymon.exptest.impl;
 
 import java.awt.*;
-import java.awt.image.*;
+import java.awt.image.BufferedImage;
 
 public class Impl {
     public static final BufferedImage _measureBI =

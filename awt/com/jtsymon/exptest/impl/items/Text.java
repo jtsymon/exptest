@@ -2,12 +2,10 @@ package com.jtsymon.exptest.impl.items;
 
 import com.jtsymon.exptest.impl.Impl;
 import com.jtsymon.exptest.impl.gui.GraphicsObject;
-import com.jtsymon.exptest.items.*;
-import com.jtsymon.exptest.misc.*;
+import com.jtsymon.exptest.items.AText;
+import com.jtsymon.exptest.misc.Rectangle;
 
-import java.awt.Font;
-import java.awt.FontMetrics;
-import java.awt.Graphics;
+import java.awt.*;
 
 public class Text extends AText {
 

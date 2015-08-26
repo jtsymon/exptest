@@ -2,7 +2,7 @@ package com.jtsymon.exptest.items;
 
 import com.jtsymon.exptest.impl.gui.GraphicsObject;
 import com.jtsymon.exptest.io.FrameLoader;
-import com.jtsymon.exptest.misc.*;
+import com.jtsymon.exptest.misc.Rectangle;
 
 public abstract class Item {
     protected int x, y;
